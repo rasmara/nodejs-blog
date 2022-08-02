@@ -17,5 +17,13 @@ exports.createUser = (req, res) => {
             return next(err);
         }
         res.send("user created successfully")
+
     });
+};
+
+exports.getUser = (req, res) => {
+    User.findOne({ username: req.body.name }, function (err, userdat) {
+        if (err) return next(err);
+        res.send(userdat);
+    })
 }

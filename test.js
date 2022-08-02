@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 
-
+const blog = requrequire('./routes/product.route'); // Imports routes for the products
 const app = express();
 
 let port = 1122;
@@ -14,3 +14,6 @@ app.listen(port, () => {
     console.log("Server up and running on http://localhost:" + port);
 
 });
+
+console.log("helper function added");
+

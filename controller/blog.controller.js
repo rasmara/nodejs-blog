@@ -1,5 +1,6 @@
 const Product = require('../models/blog.models');
 
-exports.test = function (req, res) {
+exports.tester = function (req, res) {
+    console.log("GET call")
     res.send("Greeting from Test controller@");
 }
